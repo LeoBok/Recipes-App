@@ -78,7 +78,60 @@ const Recipes = () => {
     }
 
     return (
-        <div></div>
+        <div>
+            <form onSubmit={handleSubmit}>
+                <span className='input-cont'>
+                    <input
+                        type='text'
+                        value={query}
+                        placeholder='Search a recipe...'
+                        onChange={(e) => setQuery(e.target.value)}
+                    />
+
+                    <button type="button" onClick={handleClick}>
+                        Search <FcSearch />
+                    </button>
+                </span>
+
+                <h3>Diet:</h3>
+
+                <section className="diet-section">
+
+                    {
+                        dietArray.map((singleDiet) => (
+                            <RadioBtnComponent
+                                key={singleDiet.id.toString()}
+                                value={singleDiet.name}
+                                label={singleDiet.name.charAt(0).toUpperCase() + singleDiet.name.slice(1)}
+                                checked={diet === singleDiet.name}
+                                onChange={handleDietChange}
+                            />
+                            )
+                        )
+                    }
+
+                </section>
+
+                <h3>Cuisine:</h3>
+
+                <section className="cuisine-section">
+
+                    {
+                        cuisineArray.map((singleCuisine) => (
+                            <RadioBtnComponent
+                                key={singleCuisine.id.toString()}
+                                value={singleCuisine.name}
+                                label={singleCuisine.name.charAt(0).toUpperCase() + singleCuisine.name.slice(1)}
+                                checked={cuisine === singleCuisine.name}
+                                onChange={handleCuisineChange}
+                            />
+                            )
+                        )
+                    }
+
+                </section>
+            </form>
+        </div>
     )
 }
 
