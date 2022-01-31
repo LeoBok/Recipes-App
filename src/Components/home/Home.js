@@ -3,6 +3,9 @@ import chili from './chili.png';
 import './home.css'
 import Section from './Section'
 import Review from '../reviews/Review';
+import Footer from '../footer/Footer';
+;
+
 
 const Home = () => {
     return (
@@ -45,6 +48,7 @@ const Home = () => {
             />
 
             <Review />
+            <Footer />
         </main>
     )
 }
