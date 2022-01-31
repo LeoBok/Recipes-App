@@ -2,6 +2,7 @@ import turnip from './turnip.png';
 import chili from './chili.png';
 import './home.css'
 import Section from './Section'
+import Review from '../reviews/Review';
 
 const Home = () => {
     return (
@@ -42,6 +43,8 @@ const Home = () => {
                     />
                 }
             />
+
+            <Review />
         </main>
     )
 }

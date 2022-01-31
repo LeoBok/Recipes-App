@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.artcl-review {
+    background-color: #2D6D29;
+    color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.paragraph-review {
+    text-align: center;
+    font-family: 'Oooh Baby', cursive;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.vote-paragraph {
+    text-align: center;
+}
+
+.button-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.button-cont button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: aliceblue;
+}

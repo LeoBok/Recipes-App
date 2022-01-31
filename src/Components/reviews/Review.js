@@ -33,31 +33,32 @@ const Review = () => {
         })
     }
 
-    <article key={ id } className="artcl-review">
+    return (
+        <article key={ id } className="artcl-review">
 
-        <h1>Reviews:</h1>
-        <section className="sctn-review">
+            <h1>Reviews:</h1>
 
-            <h2>user-name: { name }</h2>
+            <section className="sctn-review">
 
-            <p className="paragraph-review">“{ text }”</p>
+                <h2>user-name: { name }</h2>
 
-            <p className='vote-paragraph'>vote: { vote }</p>
+                <p className="paragraph-review">“{ text }”</p>
 
-            <div className="button-cont">
-                <button onClick={prevPerson}>
-                    <BsFillArrowLeftCircleFill />
-                </button>
-                
-                <button onClick={nextPerson}>
-                    <BsFillArrowRightCircleFill />
-                </button>
-            </div>
+                <p className='vote-paragraph'>vote: { vote }</p>
 
+                <div className="button-cont">
+                    <button onClick={prevPerson}>
+                        <BsFillArrowLeftCircleFill />
+                    </button>
+                    
+                    <button onClick={nextPerson}>
+                        <BsFillArrowRightCircleFill />
+                    </button>
+                </div>
+            </section>
 
-        </section>
-
-    </article>
+        </article>
+    )
 }
 
 export default Review
