@@ -28,6 +28,21 @@ const Recipes = () => {
         {name:'vegan', id:4},
     ]
 
+    // created a cuisine state which will be stored in the fetchData func 
+    // and change based on the cuisine selected
+    const [cuisine, setCuisine] = useState()
+
+    // created a diet state which will be stored in the fetchData func 
+    // and change based on the diet selected
+    const [diet, setDiet] = useState()
+
+    // created a query state which will be stored in the fetchData func 
+    // and change based on the searched recipe in the input field
+    const [query, setQuery] = useState('')
+
+    // set the recipes state initially as an empty array
+    const [recipes, setRecipes] = useState([])
+
     return (
         <div></div>
     )
