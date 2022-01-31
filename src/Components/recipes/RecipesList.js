@@ -6,7 +6,8 @@ import './recipe.css'
 
 const Recipes = () => {
 
-    const apiKey = 'ffd557c43fce496b88b82a49549d528b'
+    const API_KEY = process.env.REACT_APP_API_KEY
+
 
     const cuisineArray = [
         {name:'american', id:1},
@@ -48,7 +49,7 @@ const Recipes = () => {
     // fetch the data from server and update the recipes state with the fetched data
     const fetchData = async() => {
         try {
-            const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&excludeIngredients=meat&query=${query}&cuisine=${cuisine}&diet=${diet}&addRecipeInformation=true&number=15`)
+            const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&excludeIngredients=meat&query=${query}&cuisine=${cuisine}&diet=${diet}&addRecipeInformation=true&number=15`)
 
             if (!response.ok) throw Error('Did not received expected data')
 

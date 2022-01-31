@@ -9,7 +9,11 @@ body {
 }
 
 @media only screen and (min-width: 320px ) and ( max-width: 374px ) {
-  
+    
+    .App {
+        margin: 0 10px;
+    }
+
   .section {
     position: relative;
     margin-bottom: 250px;
@@ -23,7 +27,7 @@ body {
   }
 
   .descript-sec img {
-    top: 155px;
+    top: 135px;
     width: 220px;
     position: absolute;
   }
@@ -63,9 +67,17 @@ body {
     height: 30px;
     width: 100px;
   }
+
+  .main-recipes {
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 375px ) and ( max-width: 424px ) {
+
+    .App {
+        margin: 0 10px;
+    }
   
   .section {
     position: relative;
@@ -106,9 +118,17 @@ body {
     height: 40px;
     width: 110px;
   }
+
+  .main-recipes {
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 425px ) and ( max-width: 767px ) {
+
+    .App {
+        margin: 0 10px;
+    }
   
   .section {
     position: relative;
@@ -155,9 +175,12 @@ body {
     width: 100px;
   }
 
+  .main-recipes {
+      align-items: center;
+  }
 }
 
-@media only screen and (min-width: 768px ) and ( max-width: 1024px ) {
+@media only screen and (min-width: 768px ) and ( max-width: 1023px ) {
   .navbar {
     margin: 0px 30px;
   }
@@ -240,4 +263,83 @@ body {
     margin: 50px 0;
     padding: 20px;
   }
+
+  .main-recipes {
+      align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px ) and ( max-width: 1440px ) {
+
+    .App {
+        margin: 0 80px;
+    }
+
+    .navbar h1 {
+        font-size: 50px;
+    }
+
+    .menu-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 200px;
+    }
+
+    .section p {
+        font-size: 28px;
+        line-height: 50px;
+        display: flex;
+        width: 700px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .home-img {
+        width: 350px;
+    }
+
+    .descript-sec p {
+        order: 2;
+    }
+
+    .input-cont button {
+        width: 100px;
+    }
+
+    .input-cont input {
+        width: 300px;
+    }
+
+    .main-recipes {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 45px;
+    }
+
+    .recipe-box {
+        padding: 10px;
+    }
+
+    .recipe-box h1 {
+        margin-bottom: 10px;
+    }
+
+    .recipe-box img {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .recipe-box button {
+        width: 100px;
+        padding: 10px;
+    }
 }
