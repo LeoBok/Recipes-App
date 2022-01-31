@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.recipe-box {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #706643;
+}
+
+.recipe-box h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #f3dd63;
+    text-align: center;
+}
+
+.recipe-box img {
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.recipe-box button {
+    border-radius: 7px;
+    border: none;
+}

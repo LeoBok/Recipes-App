@@ -2,7 +2,7 @@ import { useState } from "react"
 import { FcSearch } from "react-icons/fc";
 import RadioBtnComponent from "./RadioBtnComponent"
 import Recipe from "./Recipe";
-import './recipes.css'
+import './recipe.css'
 
 const Recipes = () => {
 
@@ -71,6 +71,12 @@ const Recipes = () => {
     const handleDietChange = e => {
         if (e.target.checked) {
             setDiet(e.target.value)
+        }
+    }
+
+    const handleCuisineChange = e => {
+        if (e.target.checked) {
+            setCuisine(e.target.value)
         }
     }
 
