@@ -1,6 +1,9 @@
-const Section = () => {
+const Section = ({ paragraph, image, className }) => {
     return (
-        <div></div>
+        <section className={ className }>
+            { paragraph }
+            { image }
+        </section>
     )
 }
 
