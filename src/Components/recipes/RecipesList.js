@@ -66,6 +66,17 @@ const Recipes = () => {
         fetchData()
     }
 
+    const handleDietChange = e => {
+        if (e.target.checked) {
+            setDiet(e.target.value)
+        }
+    }
+
+    // submit form handler 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div></div>
     )
