@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: antiquewhite;
+  font-family: 'Pushster', cursive;
+}
+
+@media only screen and (min-width: 320px ) and ( max-width: 374px ) {
+  
+  .section {
+    position: relative;
+    margin-bottom: 250px;
+  }
+
+  .intro-sec img {
+    top: 154px;
+    left: 115px;
+    width: 190px;
+    position: absolute;
+  }
+
+  .descript-sec img {
+    top: 155px;
+    width: 220px;
+    position: absolute;
+  }
+
+  .garlic-img {
+    height: auto;
+    object-fit: cover;
+    width: 200px;
+  }
+
+  .icn-cont {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+
+  .recipe-box {
+    margin-top: 60px;
+    width: 290px;
+    height: 350px;
+    padding: 0px 20px;
+  }
+
+  .recipe-box {
+    width: 250px;
+  }
+
+  .recipe-box img {
+    width: 250px;
+  }
+
+  .recipe-box h1 {
+    font-size: 20px;
+  }
+
+  .recipe-box button {
+    height: 30px;
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 375px ) and ( max-width: 424px ) {
+  
+  .section {
+    position: relative;
+    margin-bottom: 250px;
+  }
+
+  .intro-sec img {
+    top: 125px;
+    left: 115px;
+    position: absolute;
+    width: 220px;
+  }
+
+  .descript-sec img {
+    top: 100px;
+    position: absolute;
+    width: 220px;
+  }
+  
+  .recipe-box {
+    width: 265px;
+    padding: 15px;
+    margin-top: 80px;
+    padding: 30px;
+  }
+
+  .recipe-box h1 {
+    font-size: 30px;
+  }
+
+  .recipe-box img {
+    height: 205px;
+    margin: 20px;
+    margin: 10px 0px;
+  }
+
+  .recipe-box button {
+    height: 40px;
+    width: 110px;
+  }
+}
+
+@media only screen and (min-width: 425px ) and ( max-width: 767px ) {
+  
+  .section {
+    position: relative;
+  }
+
+  .section p {
+    margin-bottom: 280px;
+  }
+
+  .intro-sec img {
+    width: 238px;
+    top: 130px;
+    left: 120px;
+    position: absolute;
+  }
+
+  .descript-sec img {
+    position: absolute;
+    width: 220px;
+    top: 100px;
+    left: 12px;
+  }
+
+  .artcl-review {
+    padding: 30px;
+  }
+
+  form h3 {
+    font-size: 25px;
+  }
+
+  form label {
+    font-size: 20px;
+  }
+
+  .recipe-box {
+    width: 370px;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .recipe-box button {
+    height: 40px;
+    width: 100px;
+  }
+
+}
+
+@media only screen and (min-width: 768px ) and ( max-width: 1024px ) {
+  .navbar {
+    margin: 0px 30px;
+  }
+
+  .navbar h1 {
+    font-size: 50px;
+  }
+
+  .menu-icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .home {
+    margin: 0px 30px;
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 130px;
+  }
+
+  .section p {
+    width: 50%;
+  }
+
+  .descript-sec p {
+    order: 2;
+  }
+    
+  .intro-sec img {
+    height: 300px;
+  }
+
+  .descript-sec img {
+    height: 250px;
+    order: 1;
+  }
+
+  .footer h2 {
+    font-size: 35px;
+  }
+
+  .icon {
+    font-size: 35px;
+  }
+
+  form {
+    margin: 0 30px;
+  }
+
+  form h3 {
+    font-size: 30px;
+  }
+
+  .diet-section label,
+  .cuisine-section label {
+    font-size: 25px;
+  }
+
+  .input-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-cont button {
+    height: 40px;
+    width: 100px;
+  }
+
+  .input-cont input {
+    width: 170px;
+    height: 34px;
+  }
+
+  .recipe-box {
+    width: 70%;
+    margin: 50px 0;
+    padding: 20px;
+  }
+}
