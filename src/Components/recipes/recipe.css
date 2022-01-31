@@ -1,0 +1,27 @@
+.input-cont {
+    display: flex;
+    align-items: center;
+}
+
+.input-cont button {
+    height: 33px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    border: 2px solid #2C752C;
+    background-color: #ffb912cc;
+}
+
+.input-cont input {
+    border: 2px solid #2C752C;
+    height: 30px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.main-recipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
