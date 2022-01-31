@@ -43,6 +43,29 @@ const Recipes = () => {
     // set the recipes state initially as an empty array
     const [recipes, setRecipes] = useState([])
 
+    // fetch the data from server and update the recipes state with the fetched data
+    const fetchData = async() => {
+        try {
+            const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&excludeIngredients=meat&query=${query}&cuisine=${cuisine}&diet=${diet}&addRecipeInformation=true&number=15`)
+
+            if (!response.ok) throw Error('Did not received expected data')
+
+            const data = await response.json()
+
+            setRecipes(data.results)
+
+            setFetchError(null)
+
+        } catch (err) {
+            setFetchError(err.message)
+        }
+    }
+
+    // data'll be fetched at every button click
+    const handleClick = () => {
+        fetchData()
+    }
+
     return (
         <div></div>
     )
