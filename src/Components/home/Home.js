@@ -1,3 +1,8 @@
+import turnip from './turnip.png';
+import chili from './chili.png';
+import './home.css'
+import Section from './Section'
+
 const Home = () => {
     return (
         <main className='home'>
