@@ -43,6 +43,8 @@ const Recipes = () => {
     // set the recipes state initially as an empty array
     const [recipes, setRecipes] = useState([])
 
+    const [fetchError, setFetchError] = useState(null)
+
     // fetch the data from server and update the recipes state with the fetched data
     const fetchData = async() => {
         try {
@@ -131,6 +133,22 @@ const Recipes = () => {
 
                 </section>
             </form>
+
+            <main className="main-recipes">
+
+                { fetchError && <p>Error while fetching the data</p> }
+
+                {
+                    recipes && recipes.map((recipe) => (
+                        <Recipe
+                            key={recipe.id}
+                            recipe={recipe}
+                        />
+                        )
+                    )
+                }
+
+            </main>
         </div>
     )
 }
