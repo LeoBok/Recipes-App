@@ -1,6 +1,7 @@
 import people_reviews from "./people_reviews"
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import './review.css'
 import { useState } from "react";
 
 const Review = () => {
@@ -31,4 +32,32 @@ const Review = () => {
             return checkIndex(newIndex);
         })
     }
+
+    <article key={ id } className="artcl-review">
+
+        <h1>Reviews:</h1>
+        <section className="sctn-review">
+
+            <h2>user-name: { name }</h2>
+
+            <p className="paragraph-review">“{ text }”</p>
+
+            <p className='vote-paragraph'>vote: { vote }</p>
+
+            <div className="button-cont">
+                <button onClick={prevPerson}>
+                    <BsFillArrowLeftCircleFill />
+                </button>
+                
+                <button onClick={nextPerson}>
+                    <BsFillArrowRightCircleFill />
+                </button>
+            </div>
+
+
+        </section>
+
+    </article>
 }
+
+export default Review
