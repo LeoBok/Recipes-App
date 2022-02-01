@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Recipes-App/static/css/main.25e7df30.css",
+    "main.js": "/Recipes-App/static/js/main.23c54617.js",
+    "static/media/chili.png": "/Recipes-App/static/media/chili.83c7d7eb57aa1cb80cc7.png",
+    "static/media/turnip.png": "/Recipes-App/static/media/turnip.274e18da1ca49367e252.png",
+    "static/media/garlic.png": "/Recipes-App/static/media/garlic.335737e01439f623bc8e.png",
+    "index.html": "/Recipes-App/index.html",
+    "main.25e7df30.css.map": "/Recipes-App/static/css/main.25e7df30.css.map",
+    "main.23c54617.js.map": "/Recipes-App/static/js/main.23c54617.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25e7df30.css",
+    "static/js/main.23c54617.js"
+  ]
+}
